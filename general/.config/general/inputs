@@ -1,0 +1,13 @@
+# Show tab-completion options on first <tab> instead of waiting
+# for multiple completions.
+set show-all-if-ambiguous on 
+
+# Case insensitive tab-completion
+set completion-ignore-case on
+
+#set editing-mode vi
+#
+#$if mode=vi 
+#    set keymap vi-insert 
+#    "jk" # remap escape
+#$endif

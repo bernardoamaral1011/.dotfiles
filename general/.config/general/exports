@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export EDITOR="nvim"
+export ALIASES="$HOME/.config/personal/alias"
+

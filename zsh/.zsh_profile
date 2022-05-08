@@ -1,0 +1,7 @@
+source $HOME/.config/general/alias
+source $HOME/.config/general/env
+source $HOME/.config/general/exports
+source $HOME/.config/general/functions
+source $HOME/.config/general/inputs
+source $HOME/.config/general/paths
+source $HOME/.config/work/work-aliases

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+STOW_FOLDERS="general,git,nvim,tmux,zsh,personal"
+DOTFILES=$HOME/.dotfiles
+
+pushd $DOTFILES > /dev/null
+
+for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
+do
+    echo "Removing $folder"
+    stow -D $folder
+done
+popd > /dev/null

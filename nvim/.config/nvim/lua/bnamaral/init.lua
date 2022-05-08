@@ -1,0 +1,5 @@
+require('bnamaral/telescope')
+require('bnamaral/lightline')
+require('bnamaral/gitsigns')
+require('bnamaral/lsp')
+require('bnamaral/treesitter')

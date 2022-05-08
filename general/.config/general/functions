@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+function encode() {
+  echo -n "$1" | base64
+}
+
+function decode() {
+  echo `echo $1 | base64 --decode`
+}

@@ -1,0 +1,13 @@
+[alias]
+  prettylog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+  ui = true
+[core]
+  editor = nvim
+[github]
+  user = bernardoamaral1011
+[user]
+  name = Bernardo Amaral
+  email = bernardoamaral1011@gmail.com
+[url "git@github.com:"]
+  insteadOf = https://github.com/
