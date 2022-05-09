@@ -20,20 +20,15 @@ alias kei="kubectl exec -it"
 
 alias ga="git add"
 alias gc="gitmoji --commit"
-alias gac="git add . && git commit"
+alias gac="git add . && gitmoji --commit"
 alias gp="git push"
 
 alias gd="git diff"
 alias gcb="git checkout -b"
+alias gco="git checkout"
 alias gs="git status"
 alias gb="git branch"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-
-# trying these out
-alias gl="tig"
-alias review="git review"
-alias gri="git rebase -i"
-alias w="wtfutil"
 
 alias d="docker"
 alias dps="docker ps"
