@@ -41,7 +41,7 @@ DISABLE_MAGIC_FUNCTIONS=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git) #docker zsh-nvm pip aws docker-compose tmux zsh-autosuggestions) # z zsh-syntax-highlighting vi-mode
+plugins=(git zsh-nvm zsh-autosuggestions) #docker zsh-nvm pip aws docker-compose tmux zsh-autosuggestions) # z zsh-syntax-highlighting vi-mode
 
 # User vim commands
 bindkey -v

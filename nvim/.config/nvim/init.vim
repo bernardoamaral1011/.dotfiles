@@ -21,6 +21,7 @@ set wildignore+=**/node_modules/*
 set wildignore+=**/android/*
 set wildignore+=**/ios/*
 set wildignore+=**/.git/*
+set laststatus=3                        " global statusline
 
 set tabstop=2                           " text
 set softtabstop=2
