@@ -5,7 +5,7 @@ syntax on                               " enables syntax highlighting
 set exrc                                " put additional vimrc in any dir
 set noshowmode                          " remove --insert-- at the bottom (have lightline)
 set nu                                  " precede each line with its line number
-set number 
+set number
 set relativenumber
 set nohlsearch
 set hidden                              " navigate buffers without losing unsaved work
@@ -13,7 +13,7 @@ set splitbelow
 set splitright
 set noerrorbells
 set wildmenu                            " nice menu when typing `:command <Tab>`
-set wildmode=longest,list,full 
+set wildmode=longest,list,full
 set wildignore+=*.pyc                   " ignore files in finders
 set wildignore+=*_build/*
 set wildignore+=**/coverage/*
@@ -27,6 +27,14 @@ set tabstop=2                           " text
 set softtabstop=2
 set shiftwidth=2
 set expandtab
+
+augroup TrailingSpace
+  au!
+  au VimEnter,WinEnter * highlight link TrailingSpaces Error
+  au VimEnter,WinEnter * match TrailingSpaces /\s\+$/
+  au FileType defx highlight clear TrailingSpaces
+augroup END
+
 
 autocmd FileType python call Python_settings()
 
@@ -65,12 +73,9 @@ autocmd InsertLeave * :set relativenumber
 """""" remaps """"""""
 let mapleader = " "
 inoremap jk <Esc>
-" noremap! <C-h> <C-w>  
-" noremap! <C-BS> <C-w> " c-bs in insert mode ! applies to insert & command-line
+" noremap! <C-h> <C-w>
+" noremap! <C-BS> <C-w> " c-bs in insert mode; Note: '!' applies to insert & command-line as well
 nnoremap Y yg$
-nnoremap n nzzzv  
-nnoremap N Nzzzv
-nnoremap J mzJ`z
 inoremap , ,<c-g>u
 inoremap . .<c-g>u
 inoremap ! !<c-g>u
@@ -80,10 +85,10 @@ nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
 nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 
 " windows mvmt
-nnoremap <c-j> <c-w>j 
-nnoremap <c-h> <c-w>h 
-nnoremap <c-k> <c-w>k 
-nnoremap <c-l> <c-w>l 
+nnoremap <c-j> <c-w>j
+nnoremap <c-h> <c-w>h
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 nnoremap <c-c> <c-w>c
 " create new buffers w/ ctrl+n
 nnoremap <silent><expr> <c-n> ':'.(winwidth(0) > 75 ? 'vs' : '').' wincmd n<cr>'
@@ -136,7 +141,7 @@ function! ToggleNetrw()
         let i = bufnr("$")
         while (i >= 1)
             if (getbufvar(i, "&filetype") == "netrw")
-                silent exe "bwipeout " . i 
+                silent exe "bwipeout " . i
             endif
             let i-=1
         endwhile

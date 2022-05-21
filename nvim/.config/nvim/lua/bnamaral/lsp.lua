@@ -55,8 +55,7 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
-local servers = { 'pyright', 'tsserver' }
-
+local servers = { 'pyright', 'tsserver', 'cssmodules_ls', 'eslint', 'vuels'}
 
 -- what to run on lsp servers attach to current buffer
 for _, lsp in ipairs(servers) do
