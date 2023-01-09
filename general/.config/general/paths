@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-export PATH=$PATH:/usr/local/go/bin:$HOME/.poetry/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/.poetry/bin:$HOME/neovim/bin
 

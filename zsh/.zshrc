@@ -41,7 +41,7 @@ DISABLE_MAGIC_FUNCTIONS=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-nvm zsh-autosuggestions) #docker zsh-nvm pip aws docker-compose tmux zsh-autosuggestions) # z zsh-syntax-highlighting vi-mode
+plugins=(git-tree-zsh git zsh-nvm zsh-autosuggestions) #docker zsh-nvm pip aws docker-compose tmux zsh-autosuggestions) # z zsh-syntax-highlighting vi-mode
 
 # User vim commands
 bindkey -v
@@ -51,3 +51,7 @@ bindkey -v
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_profile
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
