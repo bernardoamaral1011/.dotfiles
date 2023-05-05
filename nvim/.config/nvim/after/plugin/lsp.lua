@@ -49,9 +49,14 @@ end
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
 local servers = {
-  -- clangd = {},
+  clangd = {},
+  tflint = {},
   -- gopls = {},
   pyright = {},
+  volar = {
+    filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
+  },
+  svelte = {},
   -- rust_analyzer = {},
   tsserver = {},
 

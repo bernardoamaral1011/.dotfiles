@@ -61,7 +61,6 @@ require('packer').startup(function(use)
 
     use 'mbbill/undotree'
     use 'folke/zen-mode.nvim'
-    use 'github/copilot.vim'
 
     -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
     local has_plugins, plugins = pcall(require, 'custom.plugins')
