@@ -2,7 +2,7 @@ alias vim="nvim"
 alias v="vim"
 alias vi="vim"
 
-alias work="cd ~/work"
+alias work="cd ~/work_projects"
 
 alias e="export"
 

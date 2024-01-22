@@ -14,3 +14,7 @@
   email = bernardoamaral1011@gmail.com
 [url "git@github.com:"]
   insteadOf = https://github.com/
+[includeIf "gitdir:~/work_projects/"]
+    path = ~/work_projects/.gitconfig
+[init]
+	defaultBranch = main
