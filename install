@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-STOW_FOLDERS="general,git,nvim,tmux,zsh,personal"
+STOW_FOLDERS="general,git,tmux,nvim,zsh,personal"
 DOTFILES=$HOME/.dotfiles
 
 pushd $DOTFILES > /dev/null

@@ -2,7 +2,7 @@ require("bnamaral.set")
 require("bnamaral.remap")
 
 if not vim.g.vscode then
-  require("bnamaral.packer")
+  require("bnamaral.lazy")
   -- autocommands
   -- Autocommands are the way to execute any vim actions (like setting an option or mapping a key) in response to various events
   local augroup = vim.api.nvim_create_augroup
